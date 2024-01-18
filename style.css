@@ -1,0 +1,83 @@
+body {
+	font-family: Arial, sans-serif;
+}
+
+.tab {
+	overflow: hidden;
+	border: 1px solid #ccc;
+	background-color: #f1f1f1;
+	padding: 10px;
+	border-radius: 10px;
+	margin-bottom: 12px;
+}
+
+.tab button {
+	background-color: inherit;
+	float: left;
+	border: none;
+	border-radius: 6px;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition: 0.3s;
+	font-size: 17px;
+	margin-right: 2px;
+}
+
+.tab button:hover {
+	background-color: #ddd;
+}
+
+.tab button.active {
+	background-color: #ccc;
+}
+
+.tabcontent {
+	display: none;
+	padding: 6px 12px;
+	border: 1px solid #8d8d8d;
+	border-radius: 12px;
+	margin-top: 5px;
+}
+
+#challengeForm {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	row-gap: 10px;
+}
+
+#challengeDescription {
+	padding: 10px;
+    resize: none;
+}
+
+#challengeInput {
+	padding: 10px;
+}
+
+li {
+	margin-top: 10px;
+}
+
+.panel {
+	text-align: center;
+}
+
+#userTable {
+	width: 100%;
+	border-collapse: collapse;
+ }
+ 
+ #userTable th, #userTable td {
+	padding: 15px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+ }
+
+ 
+ #userTable thead {
+	background-color: #333;
+	color: white;
+ }
+ 

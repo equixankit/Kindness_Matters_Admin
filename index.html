@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<h2 class="panel">Kindness Matters Admin Panel</h2>
+
+	<div class="tab">
+		<button class="tablinks" onclick="openTab(event, 'Users')">Users</button>
+		<button class="tablinks" onclick="openTab(event, 'Challenges')">Challenges</button>
+	</div>
+
+	<div id="Users" class="tabcontent">
+		<h3>Users</h3>
+		<p>Here is the list of users:</p>
+		<table id="userTable">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Email</th>
+				</tr>
+			</thead>
+			<tbody></tbody>
+		</table>
+	</div>
+
+
+	<div id="Challenges" class="tabcontent">
+		<h3>Challenges</h3>
+		<div class="custom-search">
+			<form id="challengeForm">
+				<input type="text" id="challengeInput" class="custom-search-input" placeholder="Enter Challenge Name">
+				<textarea id="challengeDescription" class="custom-search-input" placeholder="Enter Challenge Description" rows="5"></textarea>
+				<button id="addChallengeButton" class="custom-search-botton" type="button">Add Challenge</button>
+			</form>
+		</div>
+		<p>Ongoing Challenges List : </p>
+		<ul id="challengeList"></ul>
+	</div>
+
+	<script src="index.js"></script>
+	<script type="module" src="firebase.js"></script>
+</body>
+
+</html>
